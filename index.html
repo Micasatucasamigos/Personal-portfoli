@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime Rodriguez Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Professional Headshot.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<div id="header">
+    <div>
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Skills</a></li> -->
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Jaime Rodriguez</span></h1>
+            <h3>Full-Stack Developer</h3>
+            <h6><a href="images/Jaime Rodriguez Resume CIS Grad.pdf" target="_blank" class="cv-anchor">Download my resume</a></h6>
+        </div>
+
+    </div>
+        
+    
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Professional Headshot.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a highly motivated and adaptable Computer Information Systems graduate from the University of Houston, set to complete my Bachelor of Science degree in May 2024. With a solid foundation in database administration and development, information systems analysis and design, and application development, I bring a diverse skill set to the table.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Language(s)</span><br>HTML/CSS/JavaScript</li>
+                        <li><span>Server-Side Language(s)</span><br>Python</li>
+                        <li><span>Database Language(s)</span><br>MySQL/MongoDB</li>
+                        <li><span>Front-End Framework(s)</span><br>Vue.js/Bootstrap</li>
+                        <li><span>Back-End Framework(s)</span><br>Node.js</li>
+                        <li><span>Other Tool(s)</span><br>Excel, Tableau, Power BI</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>Tech Support Specialist - Capstone Trucking</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>University of Houston - Computer Information Systems, B.S.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work" data-url="https://github.com/Jngu147/CIS4375" onclick="handleButtonClick(this)">
+                <img src="images/YouMe.png" >
+                <div class="layer">
+                    <h3>YouMe Furniture Store</h3>
+                    <ul class="portfolio-list">
+                        <li>Undergrad capstone project that allows customers to shop our sponsors online furniture inventory.</li>
+                        <br>
+                        <li>Architecture: Vue.js, Bootstrap, Node.js, MySQL, AWS.</li>
+                    </ul>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work" data-url="https://github.com/Micasatucasamigos/Car-Dealership" onclick="handleButtonClick(this)">
+                <img src="images/Best Cars.png">
+                <div class="layer">
+                    <h3>Best Cars Dealership</h3>
+                    <ul class="portfolio-list">
+                        <li>Online car retailer that allows customers to login, browse, and shop inventory.</li>
+                        <br>
+                        <li>Architecture: Vue.js, Bootstrap, Node.js, MySQL, AWS.</li>
+                    </ul>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work" data-url="https://github.com/CIS-Fall-2023/final-project-Micasatucasamigos?tab=readme-ov-file" onclick="handleButtonClick(this)">
+                <img src="images/3368 Project.png">
+                <div class="layer">
+                    <h3>Room Occupancy System</h3>
+                    <ul class="portfolio-list">
+                        <li>This application helps users to plan the occupancy of a senior citizen home facility.</li>
+                        <br>
+                        <li>Architecture: Flask, Node.js/EJS, Postman</li>
+                    </ul>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div >
+            <div class="contact-center">
+                <h1 class="sub-title contact-sub">Contact Me</h1>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                <!-- <p><i class="fas fa-paper-plane"></i> alexisrodriguez19345@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (832)275 - 8104</p> -->
+                <!-- <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div> -->
+                <!-- <a href="images/Jaime Rodriguez Resume CIS Grad.pdf" download class="btn btn2">Download CV</a> -->
+            </div>
+            <!-- <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div> -->
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Jaime Rodriguez</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    
+    function handleButtonClick(div) {
+        // Get the URL associated with the clicked div
+        var url = div.getAttribute("data-url");
+        // Navigate to the URL
+        window.open(url, '_blank');
+    }
+
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNWi_pmTDNtoTRCYE1dmj4yHkl7sBgItVcOnnIC_0hghz0xr3nvI_aUSmFHLVpMuOn/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
